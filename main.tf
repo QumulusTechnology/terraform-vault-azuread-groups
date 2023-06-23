@@ -13,6 +13,7 @@ resource "vault_identity_group" "azure_groups" {
   name     = each.key
   type     = "external"
   policies = var.policies
+  external_policies = true
 
   metadata = {
     version = "1"
