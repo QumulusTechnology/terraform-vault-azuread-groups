@@ -24,6 +24,6 @@ resource "vault_identity_group_alias" "group-alias" {
   for_each = local.azure_groups
 
   name           = each.value
-  mount_accessor = var.auth_method
+  mount_accessor = var.mount_accessor
   canonical_id   = vault_identity_group.azure_groups[each.key].id
 }

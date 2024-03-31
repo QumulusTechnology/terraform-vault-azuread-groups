@@ -16,8 +16,7 @@ variable "security_enabled" {
   description = "Determines whether mapped Azure groups should be security enabled. Set to true if all groups should be security enabled."
 }
 
-variable "auth_method" {
+variable "mount_accessor" {
   type = string
-  default = "token"
-  description = "The path of the auth method to attach the group alias to. Default to 'token'."
+  description = "The mount accessor of the auth method used for OIDC access"
 }
