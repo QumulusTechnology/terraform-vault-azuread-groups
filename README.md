@@ -55,7 +55,7 @@ variable "vault_token" {}
 
 module "groups" {
   source = "../"
-  
+
   security_enabled = true
 }
 ```
